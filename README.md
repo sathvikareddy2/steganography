@@ -47,3 +47,7 @@ npm install
 
 # Start the development server
 npm start
+### Acknowledgements
+
+This project draws inspiration from open-source implementations of steganography tools.  
+I have made my own modifications, customization, and interface improvements to build this project.
