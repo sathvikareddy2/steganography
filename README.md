@@ -33,6 +33,11 @@ This application allows users to:
 - [Node.js](https://nodejs.org/)
 - [Git](https://git-scm.com/)
 
+### Acknowledgements
+
+This project draws inspiration from open-source implementations of steganography tools.  
+I have made my own modifications, customization, and interface improvements to build this project.
+
 ### Installation
 
 ```bash
@@ -47,7 +52,4 @@ npm install
 
 # Start the development server
 npm start
-### Acknowledgements
 
-This project draws inspiration from open-source implementations of steganography tools.  
-I have made my own modifications, customization, and interface improvements to build this project.
