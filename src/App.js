@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ImageCrypt from "./pages/ImageCrypt";
 import ImageDecrypt from "./pages/ImageDecrypt";
-import About from "./pages/About";
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -20,7 +19,7 @@ function App() {
         </a>
         <input id="burger" type="checkbox" />
 
-        <label for="burger">
+        <label htmlFor="burger">
           <span></span>
           <span></span>
           <span></span>
@@ -37,11 +36,6 @@ function App() {
                 Decode
               </Link>
             </li>
-            <li>
-              <Link to="/about" className="MenuItem" onClick={closeMobileMenu}>
-                About
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>
@@ -49,7 +43,6 @@ function App() {
       <Routes>
         <Route path="/" element={<ImageCrypt />} />
         <Route path="/decode" element={<ImageDecrypt />} />
-        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
