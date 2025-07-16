@@ -3,9 +3,13 @@ import React from "react";
 export default class Button extends React.Component {
   determineStyle() {
     let styleClass = "btn";
+    
     if (this.props.secondary) {
-      styleClass += " bg-indigo";
+      styleClass += " bg-indigo text-white"; 
+    } else {
+      styleClass += " bg-blue text-white";    
     }
+
     if (this.props.size) {
       if (this.props.size === "big") {
         styleClass += " btn-lg";
@@ -15,11 +19,12 @@ export default class Button extends React.Component {
         styleClass += " btn-sm";
       }
     }
+
     return styleClass;
   }
 
   render() {
-    let componentStyle = this.determineStyle();
+    const componentStyle = this.determineStyle();
     return (
       <div className={componentStyle} onClick={this.props.onClick}>
         {this.props.text}
